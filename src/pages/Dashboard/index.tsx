@@ -341,13 +341,13 @@ function Main() {
   const getStatusIcon = () => {
     switch (sensorStatus.color) {
       case 'danger':
-        return 'TriangleAlert';
+        return 'AlertTriangle';
       case 'warning':
-        return 'TriangleAlert';
+        return 'AlertTriangle';
       case 'info':
         return 'Snowflake';
       default:
-        return 'Check';
+        return 'CheckCircle';
     }
   };
   
@@ -409,7 +409,7 @@ function Main() {
     return (
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">
-          <Lucide icon="TriangleAlert" className="w-12 h-12 text-danger mx-auto" />
+          <Lucide icon="AlertTriangle" className="w-12 h-12 text-danger mx-auto" />
           <p className="mt-4 text-danger font-medium">{error}</p>
           <Button variant="primary" className="mt-4" onClick={fetchInitialData}>
             Coba Lagi

@@ -191,7 +191,7 @@ function Main() {
                 }}
                 className="p-2 rounded-full hover:bg-slate-100"
               >
-                <Lucide icon="TextAlignJustify" className="w-[18px] h-[18px]" />
+                <Lucide icon="AlignJustify" className="w-[18px] h-[18px]" />
               </a>
               <a
                 href=""

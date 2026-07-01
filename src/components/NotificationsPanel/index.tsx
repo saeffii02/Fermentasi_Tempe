@@ -40,28 +40,27 @@ function Main(props: MainProps) {
   const getTypeIcon = (type: string): LucideIconName => {
     const iconMap: Record<string, LucideIconName> = {
       'SENSOR_WARNING': 'Thermometer',
-      'SENSOR_CRITICAL': 'TriangleAlert',
+      'SENSOR_CRITICAL': 'AlertTriangle',
       'BATCH_STARTED': 'Play',
-      'BATCH_COMPLETED': 'CircleCheck',
+      'BATCH_COMPLETED': 'CheckCircle',
       'BATCH_PHASE_CHANGE': 'RefreshCw',
       'ACTUATOR_CHANGE': 'Zap',
       'MODE_CHANGE': 'Cpu',
       'SYSTEM_ALERT': 'Bell',
       'CONNECTION_STATUS': 'Wifi',
-      'CRITICAL_STATUS': 'TriangleAlert',
+      'CRITICAL_STATUS': 'AlertTriangle',
     };
     return iconMap[type] || 'Bell';
   };
 
-  // 🔥 PERBAIKI - getSeverityStyles dengan type yang aman
   const getSeverityStyles = (severity: string): { bg: string; text: string; icon: LucideIconName } => {
     switch (severity) {
       case 'success':
-        return { bg: 'bg-green-100', text: 'text-green-600', icon: 'CircleCheck' };
+        return { bg: 'bg-green-100', text: 'text-green-600', icon: 'CheckCircle' };
       case 'warning':
-        return { bg: 'bg-yellow-100', text: 'text-yellow-600', icon: 'TriangleAlert' };
+        return { bg: 'bg-yellow-100', text: 'text-yellow-600', icon: 'AlertTriangle' };
       case 'error':
-        return { bg: 'bg-red-100', text: 'text-red-600', icon: 'TriangleAlert' };
+        return { bg: 'bg-red-100', text: 'text-red-600', icon: 'AlertTriangle' };
       default:
         return { bg: 'bg-blue-100', text: 'text-blue-600', icon: 'Info' };
     }

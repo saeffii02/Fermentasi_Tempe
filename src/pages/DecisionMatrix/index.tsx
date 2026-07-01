@@ -308,7 +308,7 @@ function MatrixGridView({ onCellClick, systemConfig }: { onCellClick: (temp: num
     if (heater > 50) return <Lucide icon="Flame" className="w-5 h-5 text-orange-500" />;
     if (humidifier > 50) return <Lucide icon="Droplets" className="w-5 h-5 text-blue-500" />;
     if (fan > 50) return <Lucide icon="Wind" className="w-5 h-5 text-purple-500" />;
-    return <Lucide icon="CircleCheck" className="w-5 h-5 text-green-500" />;
+    return <Lucide icon="CheckCircle" className="w-5 h-5 text-green-500" />;
   };
 
   return (
@@ -382,7 +382,7 @@ function MatrixGridView({ onCellClick, systemConfig }: { onCellClick: (temp: num
           </div>
           <div className="flex items-center gap-1">
             <div className="w-4 h-4 bg-green-50 border border-green-200 rounded"></div>
-            <Lucide icon="CircleCheck" className="w-3.5 h-3.5 text-green-500" />
+            <Lucide icon="CheckCircle" className="w-3.5 h-3.5 text-green-500" />
             <span className="text-xs">Kondisi Optimal</span>
           </div>
         </div>
@@ -429,7 +429,7 @@ function RuleBaseView({ systemConfig }: { systemConfig: any }) {
               <div className="text-xs text-slate-500 mt-1">{rule.reason}</div>
             </div>
             <div className="flex-shrink-0">
-              <Lucide icon="CircleCheck" className="w-4 h-4 text-green-500" />
+              <Lucide icon="CheckCircle" className="w-4 h-4 text-green-500" />
             </div>
           </div>
         ))}
@@ -627,7 +627,7 @@ function DecisionDetailPanel({ selectedPoint, decisionDetail, loading }: {
       </div>
 
       <div className="text-sm font-medium mb-2 flex items-center gap-2">
-        <Lucide icon="ChartPie" className="w-4 h-4 text-primary" />
+        <Lucide icon="PieChart" className="w-4 h-4 text-primary" />
         Membership Values:
       </div>
       <div className="space-y-2 text-xs">
@@ -638,7 +638,7 @@ function DecisionDetailPanel({ selectedPoint, decisionDetail, loading }: {
             Dingin: {((membership.temperature?.cold || 0) * 100).toFixed(0)}%
           </span>
           <span className="px-2 py-0.5 bg-green-100 rounded flex items-center gap-1">
-            <Lucide icon="CircleCheck" className="w-3 h-3 text-green-500" />
+            <Lucide icon="CheckCircle" className="w-3 h-3 text-green-500" />
             Normal: {((membership.temperature?.normal || 0) * 100).toFixed(0)}%
           </span>
           <span className="px-2 py-0.5 bg-red-100 rounded flex items-center gap-1">
@@ -653,7 +653,7 @@ function DecisionDetailPanel({ selectedPoint, decisionDetail, loading }: {
             Kering: {((membership.humidity?.dry || 0) * 100).toFixed(0)}%
           </span>
           <span className="px-2 py-0.5 bg-green-100 rounded flex items-center gap-1">
-            <Lucide icon="CircleCheck" className="w-3 h-3 text-green-500" />
+            <Lucide icon="CheckCircle" className="w-3 h-3 text-green-500" />
             Normal: {((membership.humidity?.normal || 0) * 100).toFixed(0)}%
           </span>
           <span className="px-2 py-0.5 bg-blue-100 rounded flex items-center gap-1">

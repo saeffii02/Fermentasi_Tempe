@@ -174,7 +174,7 @@ function Main() {
                                   </Menu.Item>
                                   <Menu.Item>
                                     <Lucide
-                                      icon="PanelsTopLeft"
+                                      icon="PanelLeft"
                                       className="w-4 h-4 mr-2"
                                     />
                                     English
@@ -318,7 +318,7 @@ function Main() {
                                 <Menu.Items className="w-48">
                                   <Menu.Item>
                                     <Lucide
-                                      icon="FilePen"
+                                      icon="PenSquare"
                                       className="w-4 h-4 mr-2"
                                     />{" "}
                                     New Dropdown

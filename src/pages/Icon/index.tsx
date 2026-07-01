@@ -664,11 +664,11 @@ function Main() {
                               </div>
                               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                                 <Lucide
-                                  icon="Columns2"
+                                  icon="Columns"
                                   className="block mx-auto"
                                 />
                                 <div className="mt-2 text-xs text-center">
-                                  Columns2Icon
+                                  ColumnsIcon
                                 </div>
                               </div>
                               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -1060,11 +1060,11 @@ function Main() {
                               </div>
                               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                                 <Lucide
-                                  icon="GitCommitHorizontal"
+                                  icon="GitCommit"
                                   className="block mx-auto"
                                 />
                                 <div className="mt-2 text-xs text-center">
-                                  GitCommitHorizontal
+                                  GitCommit
                                 </div>
                               </div>
                               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -1237,7 +1237,7 @@ function Main() {
                               </div>
                               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                                 <Lucide
-                                  icon="PanelsTopLeft"
+                                  icon="PanelLeft"
                                   className="block mx-auto"
                                 />
                                 <div className="mt-2 text-xs text-center">

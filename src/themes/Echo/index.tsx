@@ -496,7 +496,7 @@ function Main() {
                   }}
                   className="p-2 text-white rounded-full hover:bg-white/5"
                 >
-                  <Lucide icon="TextAlignJustify" className="w-[18px] h-[18px]" />
+                  <Lucide icon="AlignJustify" className="w-[18px] h-[18px]" />
                 </a>
               </div>
               {/* BEGIN: Breadcrumb - DINAMIS */}

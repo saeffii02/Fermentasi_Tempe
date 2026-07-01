@@ -625,7 +625,7 @@ function Main() {
               : 'bg-red-100 text-red-700 border border-red-200'
           }`}>
             <div className="flex items-center gap-2">
-              <Lucide icon={configStatus.startsWith('SUCCESS') ? 'CircleCheckBig' : 'CircleAlert'} className="w-5 h-5" />
+              <Lucide icon={configStatus.startsWith('SUCCESS') ? 'CheckCircle' : 'AlertCircle'} className="w-5 h-5" />
               <span>{configStatus}</span>
             </div>
           </div>
@@ -1017,7 +1017,7 @@ function Main() {
                     </>
                   ) : (
                     <>
-                      <Lucide icon="CircleCheck" className="w-3.5 h-3.5 text-green-500" />
+                      <Lucide icon="CheckCircle" className="w-3.5 h-3.5 text-green-500" />
                       <span>Rule: Suhu <span className="font-medium text-green-500">normal</span> → Heater idle</span>
                     </>
                   )}
@@ -1183,7 +1183,7 @@ function Main() {
                     </>
                   ) : (
                     <>
-                      <Lucide icon="CircleCheck" className="w-3.5 h-3.5 text-green-500" />
+                      <Lucide icon="CheckCircle" className="w-3.5 h-3.5 text-green-500" />
                       <span>Rule: Kelembaban <span className="font-medium text-green-500">normal</span> → Humidifier idle</span>
                     </>
                   )}
@@ -1232,7 +1232,7 @@ function Main() {
                 <ul className="space-y-0.5 text-slate-600">
                   {tempMembership.hot > 0.3 && humidityMembership.humid > 0.3 && (
                     <li className="flex items-center gap-1.5">
-                      <Lucide icon="TriangleAlert" className="w-3 h-3 text-red-500" />
+                      <Lucide icon="AlertTriangle" className="w-3 h-3 text-red-500" />
                       <span>HOT & HUMID → Fan 100% (Max cooling)</span>
                     </li>
                   )}
@@ -1262,7 +1262,7 @@ function Main() {
                   )}
                   {tempMembership.normal > 0.3 && humidityMembership.normal > 0.3 && (
                     <li className="flex items-center gap-1.5">
-                      <Lucide icon="CircleCheck" className="w-3 h-3 text-green-500" />
+                      <Lucide icon="CheckCircle" className="w-3 h-3 text-green-500" />
                       <span>NORMAL & NORMAL → Fan 0% (Idle)</span>
                     </li>
                   )}

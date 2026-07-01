@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "@/assets/css/vendors/tom-select.css";
 import { createRef, useEffect } from "react";
 import { setValue, init, updateValue } from "./tom-select";

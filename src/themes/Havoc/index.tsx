@@ -269,7 +269,7 @@ function Main() {
                 className="p-2 rounded-full hover:bg-white/5"
               >
                 <Lucide
-                  icon="TextAlignJustify"
+                  icon="AlignJustify"
                   className="w-[18px] h-[18px] text-white"
                 />
               </a>

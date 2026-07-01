@@ -5,7 +5,7 @@ import Plot from 'react-plotly.js';
 import Lucide from '@/components/Base/Lucide';
 import Button from '@/components/Base/Button';
 import { 
-  TriangleAlert  
+  AlertTriangle,  
 } from 'lucide-react';
 
 interface ThreeDSurfaceViewProps {
@@ -181,7 +181,7 @@ function ThreeDSurfaceView({ systemConfig }: ThreeDSurfaceViewProps) {
   if (!matrixData) {
     return (
       <div className="box p-5 text-center text-slate-500">
-        <Lucide icon="TriangleAlert" className="w-8 h-8 mx-auto mb-2" />
+        <Lucide icon="AlertTriangle" className="w-8 h-8 mx-auto mb-2" />
         <p>Failed to load decision matrix data</p>
       </div>
     );

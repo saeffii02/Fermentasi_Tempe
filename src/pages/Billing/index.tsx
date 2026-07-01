@@ -53,7 +53,7 @@ function Main() {
                     className="px-4 border-slate-300/80 bg-slate-100/70 dark:bg-darkmode-300"
                   >
                     <Lucide
-                      icon="ShieldX"
+                      icon="Shield"
                       className="stroke-[1.3] w-4 h-4 mr-2 -ml-0.5"
                     />{" "}
                     Cancel Subscription

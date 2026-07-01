@@ -110,7 +110,7 @@ function Main(props: MainProps) {
                               className="flex items-center gap-x-1.5 border rounded-full px-3 py-0.5 border-slate-300/70 hover:bg-slate-50 dark:hover:bg-darkmode-500"
                             >
                               <Lucide
-                                icon="UsersRound"
+                                icon="Users"
                                 className="w-4 h-4 stroke-[1.3]"
                               />
                               Users
@@ -130,7 +130,7 @@ function Main(props: MainProps) {
                               className="flex items-center gap-x-1.5 border rounded-full px-3 py-0.5 border-slate-300/70 hover:bg-slate-50 dark:hover:bg-darkmode-500"
                             >
                               <Lucide
-                                icon="KanbanSquare"
+                                icon="Kanban"
                                 className="w-4 h-4 stroke-[1.3]"
                               />
                               Products
