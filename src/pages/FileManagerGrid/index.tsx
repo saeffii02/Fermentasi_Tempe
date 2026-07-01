@@ -2,7 +2,6 @@ import Lucide from "@/components/Base/Lucide";
 import { Menu, Popover } from "@/components/Base/Headless";
 import { FormCheck, FormInput, FormSelect } from "@/components/Base/Form";
 import FileIcon from "@/components/Base/FileIcon";
-import TomSelect from "@/components/Base/TomSelect";
 import Tippy from "@/components/Base/Tippy";
 import files from "@/fakers/files";
 import users from "@/fakers/users";
@@ -270,22 +269,6 @@ function Main() {
                             <div className="text-left text-slate-500">
                               Uploader
                             </div>
-                            <TomSelect
-                              className="flex-1 mt-2"
-                              value={selectedUser}
-                              onChange={(e) => {
-                                setSelectedUser(e.target.value);
-                              }}
-                              options={{
-                                placeholder: "Search user",
-                              }}
-                            >
-                              {users.fakeUsers().map((faker, fakerKey) => (
-                                <option key={fakerKey} value={fakerKey}>
-                                  {faker.name}
-                                </option>
-                              ))}
-                            </TomSelect>
                           </div>
                           <div className="mt-3">
                             <div className="text-left text-slate-500">

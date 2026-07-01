@@ -1,5 +1,4 @@
 import Lucide from "@/components/Base/Lucide";
-import TomSelect from "@/components/Base/TomSelect";
 import { Link, useLocation } from "react-router-dom";
 import {
   FormLabel,
@@ -516,24 +515,6 @@ function Main() {
                         </div>
                       </div>
                     </label>
-                    <div className="flex-1 w-full mt-3 xl:mt-0">
-                      <TomSelect
-                        value={selectedCountry}
-                        onChange={(e) => {
-                          setSelectedCountry(e.target.value);
-                        }}
-                        options={{
-                          placeholder: "Select your country",
-                        }}
-                        className="w-full"
-                      >
-                        {countries.fakeCountries().map((faker, fakerKey) => (
-                          <option key={fakerKey} value={fakerKey}>
-                            {faker.name}
-                          </option>
-                        ))}
-                      </TomSelect>
-                    </div>
                   </div>
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
@@ -838,24 +819,6 @@ function Main() {
                         </div>
                       </div>
                     </label>
-                    <div className="flex-1 w-full mt-3 xl:mt-0">
-                      <TomSelect
-                        value={selectedLanguage}
-                        onChange={(e) => {
-                          setSelectedLanguage(e.target.value);
-                        }}
-                        options={{
-                          placeholder: "Select your language",
-                        }}
-                        className="w-full"
-                      >
-                        {languages.fakeLanguages().map((faker, fakerKey) => (
-                          <option key={fakerKey} value={faker.code}>
-                            {faker.name}
-                          </option>
-                        ))}
-                      </TomSelect>
-                    </div>
                   </div>
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
@@ -872,24 +835,6 @@ function Main() {
                         </div>
                       </div>
                     </label>
-                    <div className="flex-1 w-full mt-3 xl:mt-0">
-                      <TomSelect
-                        value={selectedTimezone}
-                        onChange={(e) => {
-                          setSelectedTimezone(e.target.value);
-                        }}
-                        options={{
-                          placeholder: "Select your timezone",
-                        }}
-                        className="w-full"
-                      >
-                        {timezones.fakeTimezones().map((faker, fakerKey) => (
-                          <option key={fakerKey} value={faker.offset}>
-                            {faker.name}
-                          </option>
-                        ))}
-                      </TomSelect>
-                    </div>
                   </div>
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">

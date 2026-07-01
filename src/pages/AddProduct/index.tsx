@@ -1,5 +1,4 @@
 import Lucide from "@/components/Base/Lucide";
-import TomSelect from "@/components/Base/TomSelect";
 import { ClassicEditor } from "@/components/Base/Ckeditor";
 import {
   FormLabel,
@@ -141,25 +140,6 @@ function Main() {
                         </div>
                       </div>
                     </label>
-                    <div className="flex-1 w-full mt-3 xl:mt-0">
-                      <TomSelect
-                        value={subcategory}
-                        onChange={(e) => {
-                          setSubcategory(e.target.value);
-                        }}
-                        options={{
-                          placeholder: "Etalase",
-                        }}
-                        className="w-full"
-                        multiple
-                      >
-                        {categories.fakeCategories().map((faker, fakerKey) => (
-                          <option key={fakerKey} value={fakerKey}>
-                            {faker.name}
-                          </option>
-                        ))}
-                      </TomSelect>
-                    </div>
                   </div>
                 </div>
               </div>

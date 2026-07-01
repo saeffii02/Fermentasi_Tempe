@@ -1,7 +1,6 @@
 import Lucide from "@/components/Base/Lucide";
 import { Menu, Popover } from "@/components/Base/Headless";
 import Pagination from "@/components/Base/Pagination";
-import TomSelect from "@/components/Base/TomSelect";
 import { FormCheck, FormInput, FormSelect } from "@/components/Base/Form";
 import Tippy from "@/components/Base/Tippy";
 import users from "@/fakers/users";
@@ -94,25 +93,6 @@ function Main() {
                       </Popover.Button>
                       <Popover.Panel placement="bottom-end">
                         <div className="p-2">
-                          <div>
-                            <div className="text-left text-slate-500">User</div>
-                            <TomSelect
-                              className="flex-1 mt-2"
-                              value={selectedUser}
-                              onChange={(e) => {
-                                setSelectedUser(e.target.value);
-                              }}
-                              options={{
-                                placeholder: "Search user",
-                              }}
-                            >
-                              {users.fakeUsers().map((faker, fakerKey) => (
-                                <option key={fakerKey} value={fakerKey}>
-                                  {faker.name}
-                                </option>
-                              ))}
-                            </TomSelect>
-                          </div>
                           <div className="mt-3">
                             <div className="text-left text-slate-500">
                               Review Rate
