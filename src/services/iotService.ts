@@ -1,7 +1,7 @@
   import axios from 'axios';
   import { io } from "socket.io-client";
 
-  const API_BASE_URL = 'http://localhost:3000';
+  const API_BASE_URL = 'https://fermentasitempebackend-production.up.railway.app';
 
   const api = axios.create({
     baseURL: `${API_BASE_URL}/api`,  
