@@ -14,6 +14,7 @@ import {
 } from "react-icons/si";
 import Button from "@/components/Base/Button";
 import { iotService, setupWebSocket } from "@/services/iotService";
+import logo from "../assets/images/SIPANGFER.png";
 
 function Main() {
   const [scrolled, setScrolled] = useState(false);
@@ -365,11 +366,7 @@ function Main() {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className={`w-10 h-10 bg-gradient-to-br ${gradientPrimary} rounded-xl flex items-center justify-center shadow-lg`}>
-              <img
-                src="/src/assets/images/SIPANGFER.png"
-                alt="Logo Sipangfer"
-                className="w-full h-full object-contain"
-              />
+              <img src={logo} alt="Logo" />
             </div>
             <div>
               <span className={`font-bold text-xl bg-gradient-to-r ${gradientPrimary} bg-clip-text text-transparent`}>
