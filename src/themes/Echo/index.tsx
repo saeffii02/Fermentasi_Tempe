@@ -18,7 +18,7 @@ import { Menu } from "@/components/Base/Headless";
 import SwitchAccount from "@/components/SwitchAccount";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import { iotService, setupWebSocket } from "@/services/iotService"; 
-import logo from "../assets/images/SIPANGFER.png";
+import logo from "@/assets/images/SIPANGFER.png";
 
 
 // Mapping path ke breadcrumb items - perhatikan huruf besar/kecil sesuai router

@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import Button from "@/components/Base/Button";
 import { iotService, setupWebSocket } from "@/services/iotService";
-import logo from "../assets/images/SIPANGFER.png";
+import logo from "@/assets/images/SIPANGFER.png";
 
 function Main() {
   const [scrolled, setScrolled] = useState(false);
