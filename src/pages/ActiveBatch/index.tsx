@@ -317,7 +317,6 @@ function Main() {
     return Math.min(100, Math.max(0, Math.round(numerator / denominator)));
   };
 
-  // 🔥 TAMBAHAN - Fungsi untuk mendapatkan display status
   const getStatusDisplay = (status: string): StatusDisplay => {
     const map: Record<string, StatusDisplay> = {
       'optimal': { label: 'Optimal', color: 'text-green-600 bg-green-100', icon: 'CheckCircle' },
@@ -342,7 +341,7 @@ function Main() {
       await iotService.completeBatch(activeBatch.id);
       if (logIntervalRef.current) clearInterval(logIntervalRef.current);
       if (sensorIntervalRef.current) clearInterval(sensorIntervalRef.current);
-      navigate('/history');
+      navigate('/dashboard/history');
     } catch (err) {
       console.error('Failed to complete batch:', err);
       alert('Failed to complete batch');
